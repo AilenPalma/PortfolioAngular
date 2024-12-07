@@ -1,0 +1,21 @@
+.social-icons {
+  position: fixed; /* Posiciona el contenedor en un lugar fijo */
+  bottom: 20px; /* Separación desde la parte inferior */
+  left: 20px; /* Separación desde el lado izquierdo */
+  display: flex; /* Habilita flexbox */
+  flex-direction: column; /* Organiza los íconos en una columna */
+  gap: 10px; /* Espaciado entre los íconos */
+  z-index: 1000; /* Asegura que esté sobre otros elementos */
+}
+
+.social-icons a {
+  color: #f5f0f0; /* Color inicial de los íconos */
+  font-size: 24px; /* Tamaño de los íconos */
+  text-decoration: none; /* Quita subrayado */
+  transition: transform 0.3s ease, color 0.3s ease; /* Efecto de animación */
+}
+
+.social-icons a:hover {
+  color: #0077b5; /* Cambia el color al pasar el ratón (ej: azul para LinkedIn) */
+  transform: scale(1.2); /* Amplía el ícono ligeramente al pasar el ratón */
+}

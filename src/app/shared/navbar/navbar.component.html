@@ -1,0 +1,20 @@
+
+
+<nav id="sidebar" class="navbar" [class.hidden]="isNavbarHidden"  >
+
+  <ul>
+
+      <li class="asideLi"><a [routerLink]="['/routePath']"></a>Me presento</li>
+      <li class="asideLi"><a [routerLink]="['about/idAbout']"  >About</a></li>
+      <li class="asideLi"><a [routerLink]="['skills/idSkills']" >Skills</a></li>
+      <li class="asideLi"><a [routerLink]="['objectives/idObjectives']" >Objectives</a></li>
+      <li class="asideLi"><a [routerLink]="['projects/idProjects']" >Projects</a></li>
+      <li class="asideLi"><a [routerLink]="['motivation/idMotivation']" >Motivation</a></li>
+      <li class="asideLi"><a [routerLink]="['contact/idContact']" >Contact</a></li>
+      <li class="asideLi"><a [routerLink]="['']" >Home</a></li>
+  </ul>
+
+</nav>
+<button class="menu-toggle" (click)="toggleNavbar()">☰ Menú</button>
+
+

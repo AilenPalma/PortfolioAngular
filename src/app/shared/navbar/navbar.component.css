@@ -1,0 +1,79 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 250px;
+  background-image: url('./../../../assets/1x/navbar.png');
+  background-size: cover; /* Ajusta la imagen para cubrir toda la barra */
+  background-position: center; /* Centra la imagen */
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  z-index: 1000;
+  transform: translateX(-100%); /* Oculta la barra lateral por defecto */
+  transition: transform 0.3s ease-in-out; /* Animación suave */
+}
+
+.navbar:not(.hidden) {
+  transform: translateX(0); /* Muestra la barra lateral*/
+}
+
+
+.navbar ul {
+  list-style: none;
+  padding:  40px;
+  margin-top: 200px;
+
+}
+
+
+.navbar li {
+  margin: 15px 0;
+  align-items: center;
+}
+@font-face {
+  font-family:'li' ;
+  src: url('./../../../assets/FugazOne-Regular.ttf');
+}
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-family: 'li';
+
+}
+
+
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+
+.hidden {
+  transform: translateX(-100%); /* Oculta la barra lateral */
+}
+
+.menu-toggle {
+  position: fixed;
+  bottom: 20px;;
+  top: 20px;
+  left: 20px;
+  background-image: url('./../../../assets/1x/navbar.png');
+  background-size: cover; /* Ajusta la imagen para cubrir toda la barra */
+  background-position: center; /* Centra la imagen */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  z-index: 1100;
+  font-size: 18px;
+
+}
+
+.menu-toggle:hover {
+  background-color: #555; /* Color de fondo al pasar el mouse */
+}
+
+

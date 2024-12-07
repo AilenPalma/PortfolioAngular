@@ -1,0 +1,89 @@
+:host{
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centra verticalmente */
+  align-items: center; /* Centra horizontalmente */
+  width: 100%;
+  height: 100vh; /* Ocupa toda la altura de la pantalla */
+  box-sizing: border-box; /* Incluye padding y border en el cálculo del tamaño */
+  margin: 0; /* Elimina márgenes */
+  padding: 0; /* Elimina relleno */
+  background-image: url('./../../../../assets/1x/backgroundSkills.png');
+  background-repeat: no-repeat; /* Evita la repetición */
+  background-size: cover; /* Escala la imagen para cubrir toda la pantalla */
+  background-position: center; /* Centra la imagen */
+  z-index: 1;
+}
+
+.vertical-title {
+  writing-mode: vertical-rl; /* Escribe el texto de arriba hacia abajo */
+  transform: rotate(180deg); /* Ajusta la orientación del texto */
+  position: absolute; /* Permite posicionar el texto fuera del flujo normal */
+  right: 10px; /* Ajusta la distancia desde el borde derecho */
+  top: 50%; /* Centra verticalmente */
+  transform: translateY(-50%) rotate(180deg); /* Compensa el desplazamiento vertical */
+  font-family: 'text-p'; /* Fuente personalizada */
+  font-size: 4rem; /* Ajusta el tamaño del texto */
+  color:rgb(244, 141, 5); /* Color del texto */
+  letter-spacing: 5px; /* Espaciado entre letras */
+  text-align: center; /* Centra el texto (por si es más largo) */
+  font-family: 'title';
+}
+
+ul {
+  list-style: none; /* Elimina los puntos de lista */
+  padding: 0;
+  margin: 0;
+  display: flex; /* Flexbox para apilar elementos */
+  flex-direction: column; /* Apila verticalmente */
+  justify-content: center; /* Centra verticalmente los elementos */
+  align-items: center; /* Centra horizontalmente */
+  gap: 20px; /* Espaciado entre casilleros */
+
+}
+
+li {
+  display: flex; /* Para alinear contenido dentro del casillero */
+  justify-content: center; /* Centra el contenido horizontalmente */
+  align-items: center; /* Centra el contenido verticalmente */
+  width: 200px; /* Ancho del casillero */
+  height: 80px; /* Alto del casillero */
+ /* Fondo semitransparente */
+
+  font-family: 'text-p'; /* Fuente personalizada */
+  font-size:xx-large; /* Tamaño del texto */
+  color: aliceblue; /* Color del texto */
+  letter-spacing: 0.4mm; /* Espaciado entre letras */
+  text-align: center; /* Centra el texto */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para destacar el casillero */
+}
+
+.skill-progress {
+  width: 200px; /* Tamaño de las imágenes */
+  height: auto;
+  margin-left: 10px; /* Espaciado opcional para imágenes */
+}
+.skills-container {
+  text-align: center;
+  margin: 20px;
+}
+
+.columns {
+  display: flex; /* Organiza las listas como columnas */
+  justify-content: space-around; /* Espaciado uniforme entre las columnas */
+  align-items: flex-start; /* Alinea las columnas desde la parte superior */
+  gap: 20px; /* Espaciado horizontal entre columnas */
+  width: 100%; /* Ocupa el ancho completo del contenedor */
+}
+
+@media (max-width: 768px) {
+  .columns {
+    flex-direction: column; /* Cambia a disposición vertical en dispositivos pequeños */
+    gap: 10px; /* Reduce el espacio entre columnas */
+  }
+
+  li {
+    width: 90%; /* Ajusta el ancho de los casilleros */
+    font-size: medium; /* Reduce el tamaño del texto */
+  }
+}

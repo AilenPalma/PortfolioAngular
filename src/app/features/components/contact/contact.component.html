@@ -1,0 +1,114 @@
+<p>contacto works!</p>
+<div class="contact-form">
+  <h1>Contacto</h1>
+
+  <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+
+    <div>
+
+      <label for="name">Nombre:</label>
+      <input id="nombre" type="text" formControlName="nombre">
+      <div *ngIf="contactForm.get('nombre')?.invalid && contactForm.get('nombre')?.touched">
+        <small *ngIf="contactForm.get('nombre')?.errors?.['required']"> El nombre es obligatorio.</small>
+        <small *ngIf="contactForm.get('nombre')?.errors?.['minlength']"> Debe tener al menos 3 caracteres.</small>
+      </div>
+    </div>
+
+    <div>
+      <label for="email">Email:</label>
+      <input id="email" type="email" formControlName="email">
+      <div *ngIf="contactForm.get('email')?.invalid && contactForm.get('email')?.touched">
+        <small *ngIf="contactForm.get('email')?.errors?.['required']">El email es obligatorio.</small>
+        <small *ngIf="contactForm.get('email')?.errors?.['email']">El email no es válido.</small>
+      </div>
+    </div>
+
+    <div>
+      <label for="mensaje">Mensaje:</label>
+      <textarea id="mensaje" formControlName="mensaje"></textarea>
+      <div *ngIf="contactForm.get('mensaje')?.invalid && contactForm.get('mensaje')?.touched">
+        <small *ngIf="contactForm.get('mensaje')?.errors?.['required']">El mensaje es obligatorio.</small>
+        <small *ngIf="contactForm.get('mensaje')?.errors?.['minlength']">Debe tener al menos 10 caracteres.</small>
+      </div>
+    </div>
+
+    <button type="submit" [disabled]="contactForm.invalid">Enviar</button>
+
+    <!--<input id="name" formControlName="name" type="text" placeholder="Tu nombre" />
+<!--  -->
+      <!-- @if (contactForm['nombre'].touched && contactForm.controls['nombre'].getError('required')) { -->
+        <!-- <div class="error"> -->
+          <!-- Debe de ser de 3 letras -->
+         <!-- este campo es requerido
+        </div>
+        }
+        @if (formProduct.controls['nombre'].touched && formProduct.controls['nombre'].getError('minlength')) {
+          <div class="error">
+             Debe de ser de 3 letras
+           requiere un minimo de 3 letras
+          </div>
+        }
+
+    </div>
+    <div>
+      <label for="email">Email:</label>
+      <input id="email" formControlName="email" type="email" placeholder="Tu email" />
+    </div>
+    <div>
+      <label for="message">Mensaje:</label>
+      <textarea id="message" formControlName="message" rows="5" placeholder="Tu mensaje"></textarea>
+    </div>
+    <button type="submit" [disabled]="contactForm.invalid">Enviar</button>
+  </form>
+</div>
+<!--  @if (formProduct.controls['nombre'].touched && formProduct.controls['nombre'].getError('required')) {
+      <div class="error">
+        <!-- Debe de ser de 3 letras -->
+       <!-- este campo es requerido
+      </div>
+      }
+      @if (formProduct.controls['nombre'].touched && formProduct.controls['nombre'].getError('minlength')) {
+        <div class="error">
+           Debe de ser de 3 letras
+         requiere un minimo de 3 letras
+        </div>
+      }
+
+
+    <!-- Campo de producto
+    <label>Precio</label>
+    <input
+      type="number"
+      placeholder="Precio del producto"
+      formControlName="precio"
+      >
+      @if (formProduct.controls['precio'].touched && formProduct.controls['precio'].getError('required')) {
+        <div class="error">
+          El campo es requerido
+        </div>
+      }
+      @if (formProduct.controls['precio'].touched && formProduct.controls['precio'].getError('min')) {
+        <div class="error">
+          El precio debe de ser 100 o mayor
+        </div>
+      }
+
+    <!-- Campo de existencias -
+    <label>Existencias</label>
+    <input
+      type="number"
+      placeholder="Existencias del producto"
+      formControlName="existencias"
+      >
+      @if(formProduct.controls['existencias'].touched && !formProduct.controls['existencias'].value){
+        <div class="error">
+          Las existencias deben de ser 0 o mayor
+        </div>
+      }
+
+    <button type="submit">
+      Guardar
+    </button>
+  </form>
+
+</fieldset> -->

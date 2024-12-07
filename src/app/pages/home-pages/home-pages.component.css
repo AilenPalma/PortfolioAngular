@@ -1,0 +1,95 @@
+
+
+
+
+
+
+
+
+
+.flex-container {
+  display: flex;
+  height: 100vh; /* Altura completa de la pantalla */
+}
+
+.column {
+  flex: 1; /* Cada columna ocupa un tercio del ancho */
+  display: flex;
+  flex-direction: column; /* Organiza el contenido de cada columna */
+  justify-content: center; /* Centra verticalmente los elementos */
+  align-items: center; /* Centra horizontalmente */
+}
+
+.right-column img {
+  max-width: 90%; /* Escala la imagen dentro del contenedor */
+  max-height: 90%; /* Limita la altura para evitar desbordamiento */
+  object-fit: contain; /* Ajusta la imagen sin distorsión */
+}
+.left-column, .right-column {
+  flex:1;
+  display: flex;
+  flex-direction: column; /* Organiza los elementos en columnas */
+  justify-content: flex-start; /* Alinea los elementos al principio */
+  align-items: center; /* Centra los elementos horizontalmente */
+  text-align: center; /* Centrado del texto */
+  padding: 20px; /* Espaciado interno opcional */
+}
+.center-column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; /* Mueve el contenido hacia abajo */
+  align-items: center; /* Centra el contenido horizontalmente */
+  text-align: center; /* Centra el texto */
+  padding: 20px; /* Espaciado opcional alrededor del contenido */
+}
+
+@font-face {
+  font-family: 'nombre';
+  src: url('./../../../assets/FugazOne-Regular.ttf');
+}
+
+h1{
+color: rgb(255, 255, 255);
+font-family: 'form';
+line-height: 100px;
+font-size: 70px;
+letter-spacing: 2px;
+text-shadow:
+    0 0 5px rgb(255, 255, 255),
+    0 0 10px rgb(255, 255, 255),
+    0 0 20px rgb(255, 255, 255),
+    0 0 40px rgb(167, 24, 254),
+    0 0 80px rgb(167, 24, 254),
+    0 0 90px rgb(167, 24, 254),
+    0 0 100px rgb(167, 24, 254),
+    0 0 150px rgb(167, 24, 254);
+}
+.right-column{
+
+  position:relative;
+}
+.right-column img {
+  max-width: 90%; /* Escala la imagen dentro del contenedor */
+  max-height: 90%; /* Limita la altura para evitar desbordamiento */
+  object-fit: contain; /* Ajusta la imagen sin distorsión */
+  border-radius: 50px 250px 50px 250px;
+  box-shadow: 2px 3px 40px 2px rgb(3, 164, 118) ;
+}
+
+@media (max-width: 768px) {
+  .flex-container {
+    flex-direction: column; /* Cambia a diseño vertical */
+  }
+  .column {
+    flex: unset; /* Anula el ancho fijo */
+    height: auto; /* Permite que cada columna ajuste su altura */
+  }
+
+
+
+
+
+
+
+

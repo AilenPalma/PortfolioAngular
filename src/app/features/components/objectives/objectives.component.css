@@ -1,0 +1,86 @@
+:host{
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centra verticalmente */
+  align-items: center; /* Centra horizontalmente */
+  width: 100%;
+  height: 100vh; /* Ocupa toda la altura de la pantalla */
+  box-sizing: border-box; /* Incluye padding y border en el cálculo del tamaño */
+  margin: 0; /* Elimina márgenes */
+  padding: 0; /* Elimina relleno */
+  background-image:url('./../../../../assets/1x/backgroundObjetives.png') ;
+  background-repeat: no-repeat; /* Evita la repetición */
+  background-size: cover; /* Escala la imagen para cubrir toda la pantalla */
+  background-position: center; /* Centra la imagen */
+}
+
+
+
+
+
+
+
+
+
+
+.horizontal-title {
+  position: absolute; /* Posiciona el texto respecto al contenedor */
+  bottom: 0; /* Alinea al borde inferior */
+  left: 50%; /* Centra horizontalmente */
+  transform: translateX(-50%); /* Ajusta para que el texto esté perfectamente centrado */
+  font-family: 'title'; /* Fuente personalizada */
+  font-size: 4rem; /* Ajusta el tamaño del texto */
+  color:rgb(244, 141, 5); /* Color del texto */
+  letter-spacing: 5px; /* Espaciado entre letras */
+  text-align: center; /* Centra el texto (por si es más largo) */
+  margin: 10px 0; /* Espaciado opcional desde el borde */
+}
+
+
+
+
+.objetives{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-container{
+  display: flex;
+  justify-content: center;   /* Centra horizontalmente */
+  align-items: center;       /* Centra verticalmente */
+  width: 100%;               /* Ancho completo */
+  padding: 20px; /* Agrega espacio alrededor en dispositivos pequeños */
+  box-sizing: border-box; /* Incluye el padding en el ancho total */
+  text-align: center;
+
+}
+
+.text-box{
+  width: 80%;
+  max-width: 600px;
+
+  text-align: center;
+  box-shadow: 0 0 7px 1px #FF1493, 0 0 7px 1px #0CFFF4;
+  font-family:'text-p';
+  background-color: rgba(0, 0, 0, 0.6); /* Fondo semitransparente */
+  color: aliceblue;
+  font-size:x-large;
+  letter-spacing: 3px;
+}
+
+
+/* Media queries para responsividad */
+@media (max-width: 768px) {
+  .text-box {
+    width: 90%; /* Ajusta el ancho en pantallas medianas */
+    font-size: 1rem; /* Reduce el tamaño del texto */
+  }
+}
+
+@media (max-width: 480px) {
+  .text-box {
+    width: 95%; /* Ancho casi completo en pantallas pequeñas */
+    font-size: 0.9rem; /* Texto más pequeño */
+  }
+}
