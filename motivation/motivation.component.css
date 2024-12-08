@@ -1,0 +1,44 @@
+.Motivation{
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Dos columnas de igual tamaño */
+  align-items: center; /* Centra el contenido verticalmente */
+  gap: 20px; /* Espaciado entre columnas */
+  height: 100vh; /* Altura de toda la pantalla */
+  padding: 0px; /* Espaciado interno */
+  box-sizing: border-box; /* Asegura que el padding no afecte el tamaño total */
+  background-image: url(./../../../../assets/1x/imgMotivation.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+
+
+.titile,.text-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;   /* Centra horizontalmente */
+  align-items: center;       /* Centra verticalmente */
+  width: 100%;               /* Ancho completo */
+  padding: 20px; /* Agrega espacio alrededor en dispositivos pequeños */
+}
+
+.text-box{
+  font-family: 'text-p';
+  color: aliceblue;
+  letter-spacing: 2px;
+  font-size: xx-large;
+  text-align: center;
+  width: 80%;
+  max-width: 600px;
+  box-shadow: 0 0 7px 1px #FF1493, 0 0 7px 1px #0CFFF4;
+
+}
+
+.titile{
+  color: bisque;
+  font-family: 'title';;
+  font-size: 60px;;
+}
+
+
