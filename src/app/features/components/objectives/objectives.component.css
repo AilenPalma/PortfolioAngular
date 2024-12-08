@@ -33,7 +33,7 @@
   color:rgb(244, 141, 5); /* Color del texto */
   letter-spacing: 5px; /* Espaciado entre letras */
   text-align: center; /* Centra el texto (por si es más largo) */
-  margin: 10px 0; /* Espaciado opcional desde el borde */
+  margin: 80px 0; /* Espaciado opcional desde el borde */
 }
 
 
