@@ -55,6 +55,7 @@ label{
   cursor: pointer;
   width: 100%; /* Asegura que el botón también esté dentro del formulario */
 
+  text-shadow: 20px20px rgb(189, 223, 219);
 
 
 }
@@ -65,6 +66,7 @@ label{
   font-family: 'button';
   font-weight: 900;
   font-size: 20px;
+  text-shadow: 20px20px rgb(192, 227, 223);
 }
 @font-face {
   font-family: 'button';
