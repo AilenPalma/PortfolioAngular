@@ -1,12 +1,5 @@
 
 
-
-
-
-
-
-
-
 .flex-container {
   display: flex;
   height: 100vh; /* Altura completa de la pantalla */
@@ -17,7 +10,7 @@
   display: flex;
   flex-direction: column; /* Organiza el contenido de cada columna */
   justify-content: center; /* Centra verticalmente los elementos */
-  align-items: center; /* Centra horizontalmente */
+  /* Centra horizontalmente */
 }
 
 .right-column img {
@@ -25,7 +18,7 @@
   max-height: 90%; /* Limita la altura para evitar desbordamiento */
   object-fit: contain; /* Ajusta la imagen sin distorsión */
 }
-.left-column, .right-column {
+.right-column {
   flex:1;
   display: flex;
   flex-direction: column; /* Organiza los elementos en columnas */
@@ -39,11 +32,20 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-end; /* Mueve el contenido hacia abajo */
-  align-items: center; /* Centra el contenido horizontalmente */
+  align-items:baseline; /* Centra el contenido horizontalmente */
   text-align: center; /* Centra el texto */
   padding: 20px; /* Espaciado opcional alrededor del contenido */
 }
 
+.left-column{
+  flex: 1;
+display: flex;
+flex-direction: column;
+justify-content: flex-end; /* Mueve el contenido hacia abajo */
+align-items:end; /* Centra el contenido horizontalmente */
+text-align:end; /* Centra el texto */
+padding: 20px; /* Espaciado opcional alrededor del contenido */
+}
 @font-face {
   font-family: 'nombre';
   src: url('./../../../assets/FugazOne-Regular.ttf');

@@ -1,38 +1,20 @@
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-.image-layout{
-  position: relative;
-  height: 100vh; /* Ocupa toda la altura de la ventana */
-}
-
-
-
-
-
-
-
-
-
-
-
 .image-layout {
- /* Dos columnas para las imágenes superiores */
-  /* Filas automáticas */
-  gap: 10px; /* Espacio entre elementos */
-  /* Centra el contenido en cada celda */
- /* Alinea verticalmente los elementos */
   margin: 20px;
 }
 
-.image-item1 img {
-  width: 100%; /* Ajusta el tamaño de las imágenes */
-  max-width: 400px; /* Tamaño máximo para las imágenes */
+.title{
+  color:rgb(167, 24, 254);
+  font-family: 'title';
+  font-size: 60px;
+  margin-top: 80px;
+  text-align: center;
+}
 
-  box-shadow: 0 4px 6px rgba(28, 218, 133, 0.403); /* Sombra suave */
+.image-item1 img {
+  width: 100%; /* Ajusta el tamaño de las imágenes*/
+  max-width: 400px; /* Tamaño máximo para las imágenes*/
+
+  box-shadow: 0 4px 6px rgba(28, 218, 133, 0.403); /* Sombra suave*/
   position: absolute;
   bottom: 5px;
   left:40px;
@@ -40,7 +22,7 @@
 }
 
 .image-item2 img {
-  width: 100%; /* Ajusta el tamaño de las imágenes */
+  width: 100%; /* Ajusta el tamaño de las imágenes*/
   max-width: 400px; /* Tamaño máximo para las imágenes */
   box-shadow: 0 4px 6px rgba(239, 145, 83, 0.948); /* Sombra suave */
   position: absolute;
@@ -74,40 +56,46 @@
 }
 
 
-/*.icon-item {
-  display: flex; /* Alinea ícono y texto en línea
-  justify-content: center; /* Centra el ícono y el texto horizontalmente
-  align-items: center; /* Alinea verticalmente ícono y texto
-  gap: 8px; /* Espacio entre el ícono y el texto
-  margin-top: 10px; /* Separación del pie de foto respecto a la imagen principal
+@media (max-width: 768px) {
+  .image-layout {
+    grid-template-columns: 1fr; /* Cambia a una columna */
+  }
+
+  .title {
+    font-size: 2rem; /* Reduce el tamaño del título en pantallas pequeñas */
+    color: aliceblue;
+  }
 }
 
-.icon-item img {
-  width: 24px; /* Tamaño del ícono
-  height: 24px; /* Tamaño del ícono
-}
 
-.caption {
-  text-align: center;
-  font-size: 14px;
-  color:aliceblue;
-  margin-top: 8px;
-}
 
-.image-item.centered {
-  grid-column: span 2; /* Ocupa ambas columnas
-  grid-row: span 2;
-  text-align: center; /* Centra el contenido
-}
-.icon-item img{
-  width: 100%; /* Ajusta el tamaño de las imágenes
-  max-width: 100px; /* Tamaño máximo para las imágenes
-  border-radius: 8px; /* Bordes redondeados opcionales
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave
-}
 
-p{
-  color: aliceblue;
 
-}
-*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
